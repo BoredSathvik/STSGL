@@ -5,7 +5,7 @@ SJSGL Is a simple javascript game library meant for beginners to learn javascrip
 
 To get your hands on SJSGL you can download the ``SJSGL.js`` file from this page.
 Then in your ``script.js`` javascript file import it with this line of code 
-```
+```js
 import * as SJSGL from './SJSGL.js'
 ```
 
@@ -13,7 +13,7 @@ import * as SJSGL from './SJSGL.js'
 
 To download it with node.js use the command:
 
-```
+```shell
 npm install SJSGL
 ```
 
