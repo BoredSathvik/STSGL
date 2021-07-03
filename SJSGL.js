@@ -242,12 +242,28 @@ class Sprite extends GameObject {
      * Returns a bool to see if a sprite is colliding
      * with another sprite.
      * @param {Sprite} sprite 
+     * @returns {boolean}
      */
-    checkCollisions(sprite) {
+    checkCollisionsSprite(sprite) {
         return (this.x + this.width > sprite.rect.x) && 
             (this.x < sprite.rect.x + sprite.rect.width) &&
             (this.y + this.height > sprite.rect.y) &&
             (this.y < sprite.rect.y + sprite.rect.height);
+    }
+
+    /**
+     * 
+     * @param {number} x 
+     * @param {number} y 
+     * @param {number} width 
+     * @param {number} height 
+     * @returns {boolean}
+     */
+    checkCollisionsPos(x, y, width, height) {
+        return (this.x + this.width > x) && 
+            (this.x < x + width) &&
+            (this.y + this.height > y) &&
+            (this.y < y + height);
     }
 }
 
